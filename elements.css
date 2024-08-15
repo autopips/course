@@ -1,7 +1,12 @@
 
 
+.cardss{
+    display: flex;
+}
+
+
 .card {
-  --width: 92%;
+  --width: 40%;
   --height: auto;
   --primary: #00b9ae;
   --text: #f9f9f9b2;
@@ -24,6 +29,8 @@
   gap: 0.7rem;
   padding: 1em;
   padding-top: 1.4em;
+  margin: 1.5%;
+  
 }
 #card{
  margin-top: 2%;
@@ -32,10 +39,10 @@
 
 .card .card__title {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 17px;
   font-weight: bold;
   margin-top: 0.2rem;
-  margin-left: -60%;
+  
 }
 
 .rating {
