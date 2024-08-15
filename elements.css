@@ -39,10 +39,11 @@
 
 .card .card__title {
   margin: 0;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   margin-top: 0.2rem;
-  
+  font-family: 'Righteous', cursive;
+  text-align: left;
 }
 
 .rating {
