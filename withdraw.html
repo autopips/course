@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="withdraw.css">
-	<script src="script.js"></script>
    <style>
 	   @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 	   @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
@@ -45,15 +44,45 @@
 
 
 
+                    <button class="loader__btn" id="loaderr">
+                           <div class="loader"></div>
+                           Processing ...
+                     </button>
+
+
+
+
+
+
      <button class="buttonn" onClick="withdraw()"> Confirm</button>
 
 
 
    <script>
    
+      
+   
+   
+   
+   
 		     function withdraw(){
-		           var loadd = document.getElementById("carddd");
+		         
+		           var loadd = document.getElementById("loaderr");
 		           loadd.style.visibility=("visible");
+		         
+		           
+		           setTimeout(function() {
+                      document.getElementById('loaderr').style.opacity = '0';
+                      document.getElementById('loaderr').style.visibility = 'hidden';
+                      
+                      document.getElementById('carddd').style.visibility = 'visible';
+                      
+                   }, 3000);
+		           
+		           
+		           
+		           //var loadd = document.getElementById("carddd");
+		           //loadd.style.visibility=("visible");
 		     }
 
 
