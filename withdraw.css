@@ -1,21 +1,8 @@
 body
 {
-    background: #ffffff;
+    background: url("Img/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-.top{
-    display: flex;
-}
-.svg1{
-    
-}
-.review{
-    margin-top: -0.2%;
-    font-size: 17px;
-    margin-left: 18%;
-}
-.svg2{
-    margin-left: 17%;
-}
 
