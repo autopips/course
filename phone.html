@@ -1,0 +1,433 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <script src='phone.js'></script>
+    <Link href="phone.css" rel="stylesheet">
+    
+</head>
+	
+<body>
+
+   
+   
+   
+   <div class="textContainer" id="container">
+        
+        
+        <div class="inputbox">
+            <input required="required" type="text" id="input">
+            
+            <i></i>
+        </div>
+        
+        
+   </div>
+
+
+<div class="one" onClick="one()"></div>
+<div class="two"onClick="two()"></div>
+<div class="three"onClick="three()"></div>
+<div class="four"onClick="four()"></div>
+<div class="five"onClick="five()"></div>
+<div class="six"onClick="six()"></div>
+<div class="seven"onClick="seven()"></div>
+<div class="eight"onClick="eight()"></div>
+<div class="nine"onClick="nine()"></div>
+<div class="zero"onClick="zero()"></div>
+<div class="star"onClick="star()"></div>
+<div class="hash1"onClick="hash()"></div>
+
+
+<div class="call"onClick="call()"></div>
+
+
+
+<image class="back" src="Img/back.png" onClick="cancel()"></image>
+
+
+
+<div class="loader" id="loader" >
+
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
+    <p class="ussd"> USSD code running</p>
+    
+</div>
+
+
+
+<div class="alert" id="alertAirtime" >
+
+    <p class="tittle"> Orange Message</p>
+    <p class="body"> You have P1.07 in your main account to be used before 29/06/2025.On-Net balance: P508.75 .National SMS:0</p>
+     
+     <div class="divider"></div>
+     
+     
+     <p class="ok" onClick="ok()">OK</p>
+</div>
+
+
+<!--------------------------------------------OrangeMoney---------------------->
+
+
+
+
+
+<div class="orangeM1" id="orangeM1" >
+
+    
+    <p class="bodyM1"> Scam Alert! Be warned of people claiming to <br/>be Orange employees,DO NOT SHARE your details. <br/> 1 About Orange Money  <br/>2 Orange Money Transactions <br/> 3 Pin Reset                  </p>
+     
+     <div class="inputboxM1">
+          <input required="required" type="text">
+          <i></i>
+     </div>
+    
+    
+    <div class="optionsM1">
+    <p class="cancelM1"> Cancel</p>
+    <p class="sendM1" onClick="send1()"> Send</p>
+    </div>
+    
+    
+</div>
+
+
+
+<div class="orangeM2" id="orangeM2" >
+
+    
+    <p class="bodyM2"> Please enter your secret code  </p>
+     
+     <div class="inputboxM2">
+          <input required="required" type="text" id="inputPin">
+          <i></i>
+     </div>
+    
+    
+    <div class="optionsM2">
+    <p class="cancelM2"> Cancel</p>
+    <p class="sendM2" onClick="send2()"> Send</p>
+    </div>
+    
+    
+</div>
+
+
+<div class="orangeBal" id="orangeBal" >
+
+    
+    <p class="bodyBal"> Account Bal: 17 500.09  <br/> 1 Money Transfer <br/> 2 International Money Transfer <br/> 3 Prepaid Services <br/> 4 Pay <br/> 5 Orange Money Visa <br/> 6 N'stakolle Loan <br/> 7 More           </p>
+     
+     <div class="inputboxBal">
+          <input required="required" type="text">
+          <i></i>
+     </div>
+    
+    
+    <div class="optionsBal">
+    <p class="cancelBal"> Cancel</p>
+    <p class="sendBal" > Send</p>
+    </div>
+    
+    
+</div>
+
+
+
+<!----------------------------------------------------------------------------->
+
+
+
+<div class="orangeAbs" id="orangeAbs" >
+
+    
+    <p class="bodyAbs"> Account Bal: 74 621.84  <br/> 1 Money Transfer <br/> 2 International Transactions <br/> 3 Prepaid Services <br/> 4 Pay <br/> 5 Absa Visa <br/> 6 Charity Pay <br/> 7 More           </p>
+     
+     <div class="inputboxAbs">
+          <input required="required" type="text">
+          <i></i>
+     </div>
+    
+    
+    <div class="optionsAbs">
+    <p class="cancelAbs"> Cancel</p>
+    <p class="sendAbs" onClick="absErr()"> Send</p>
+    </div>
+    
+    
+</div>
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+
+
+<script>
+
+  var loader = document.getElementById("loader");
+  loader.classList.add("hidden");
+
+
+</script>
+
+
+
+<script>
+
+
+
+
+
+  
+
+
+
+function one(){
+    
+  var inputValue = "1";
+  document.getElementById("input").value += inputValue;
+
+}
+function two(){
+    var inputValue = "2";
+    document.getElementById("input").value += inputValue;
+
+}
+function three(){
+    var inputValue = "3";
+    document.getElementById("input").value += inputValue;
+}
+function four(){
+    var inputValue = "4";
+    document.getElementById("input").value += inputValue;
+}
+function five(){
+    var inputValue = "5";
+    document.getElementById("input").value += inputValue;
+}
+function six(){
+    var inputValue = "6";
+    document.getElementById("input").value += inputValue;
+}
+function seven(){
+    var inputValue = "7";
+    document.getElementById("input").value += inputValue;
+}
+function eight(){
+    var inputValue = "8";
+    document.getElementById("input").value += inputValue;
+}
+function nine(){
+    var inputValue = "9";
+    document.getElementById("input").value += inputValue;
+}
+function zero(){
+    var inputValue = "0";
+    document.getElementById("input").value += inputValue;
+}
+function star(){
+    var inputValue = "*";
+    document.getElementById("input").value += inputValue;
+}
+function hash(){
+    var inputValue = "#";
+    document.getElementById("input").value += inputValue;
+}
+
+
+function call(){
+    
+    container0=document.getElementById("input").value;
+    
+    if(container0=="*145#"){
+   
+      var loader = document.getElementById("loader");
+      loader.classList.add("shown");
+   
+   
+        var timeout = setTimeout(function() {
+            
+            alertAir=document.getElementById("alertAirtime");
+            var loader = document.getElementById("loader");
+            om1=document.getElementById("orangeM1");
+            om2=document.getElementById("orangeM2");
+            omBal=document.getElementById("orangeBal");
+            
+            loader.style.display=("none");
+            om1.style.display=("Block");
+            
+            var inputValue = "";
+            document.getElementById("input").value = inputValue;
+        }, 3000);
+
+    } else if(container0=="*155#"){
+        
+        var loader = document.getElementById("loader");
+        loader.classList.add("shown");
+   
+   
+        var timeout = setTimeout(function() {
+            
+            alertAir=document.getElementById("alertAirtime");
+            var loader = document.getElementById("loader");
+            om1=document.getElementById("orangeM1");
+            om2=document.getElementById("orangeM2");
+            omBal=document.getElementById("orangeBal");
+            
+            loader.style.display=("none");
+            alertAir.style.display=("Block");
+            
+            var inputValue = "";
+            document.getElementById("input").value = inputValue;
+        }, 3000);
+    }
+      else if (container0=="*120*2272#"){
+   
+      var loader = document.getElementById("loader");
+      loader.classList.add("shown");
+   
+   
+        var timeout = setTimeout(function() {
+            
+            alertAir=document.getElementById("alertAirtime");
+            var loader = document.getElementById("loader");
+            om1=document.getElementById("orangeM1");
+            om2=document.getElementById("orangeM2");
+            omBal=document.getElementById("orangeBal");
+            
+            loader.style.display=("none");
+            om1.style.display=("none");
+            om2.style.display=("Block");
+            
+            var inputValue = "";
+            document.getElementById("input").value = inputValue;
+        }, 3000);
+
+    } 
+      
+}
+
+function ok(){
+      alertAir=document.getElementById("alertAirtime");
+      alertAir.style.display=("none");
+      
+      var inputValue = "";
+      document.getElementById("input").value = inputValue;
+}
+
+function cancel(){
+    var inputValue = "";
+    document.getElementById("input").value = inputValue;
+}
+
+
+//------------------------------------------------------------------------------/
+
+
+
+function send1(){
+    
+      var loader = document.getElementById("loader");
+      loader.classList.add("shown");
+   
+   
+       
+            om1=document.getElementById("orangeM1");
+            om2=document.getElementById("orangeM2");
+            omBal=document.getElementById("orangeBal");
+            
+            
+            om1.style.display=("none");
+            om2.style.display=("block");
+            
+}
+
+function send2(){
+    
+      pin=document.getElementById("inputPin").value;
+      
+      var loader = document.getElementById("loader");
+      loader.classList.add("shown");
+     
+     
+     
+     if(pin=="7379"){
+    
+      var loader = document.getElementById("loader");
+      loader.classList.add("shown");
+   
+   
+       
+            om1=document.getElementById("orangeM1");
+            om2=document.getElementById("orangeM2");
+            omBal=document.getElementById("orangeBal");
+            orangeAbs=document.getElementById("orangeAbs");
+            
+            
+            om1.style.display=("none");
+            om2.style.display=("none");
+            omBal.style.display=("none");
+            orangeAbs.style.display=("block");
+      }
+       else if(pin=="7230"){
+           
+           var loader = document.getElementById("loader");
+           loader.classList.add("shown");
+   
+   
+       
+            om1=document.getElementById("orangeM1");
+            om2=document.getElementById("orangeM2");
+            omBal=document.getElementById("orangeBal");
+            orangeAbs=document.getElementById("orangeAbs");
+            
+            
+            om1.style.display=("none");
+            om2.style.display=("none");
+            omBal.style.display=("block");
+            orangeAbs.style.display=("none");
+       }
+        else{
+          alert("Wrong Pin");
+          
+          om1.style.display=("none");
+            om2.style.display=("none");
+            omBal.style.display=("none");
+          
+      }
+            
+}
+
+function absErr(){
+    alert("Please visit Absa outlet to re-enable cellphone banking")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+	
+	
+</body>
+</html>
