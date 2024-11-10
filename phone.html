@@ -329,6 +329,29 @@ function call(){
         }, 3000);
 
     } 
+      else if (container0=="*173#"){
+   
+      var loader = document.getElementById("loader");
+      loader.classList.add("shown");
+   
+   
+        var timeout = setTimeout(function() {
+            
+            alertAir=document.getElementById("alertAirtime");
+            var loader = document.getElementById("loader");
+            om1=document.getElementById("orangeM1");
+            om2=document.getElementById("orangeM2");
+            omBal=document.getElementById("orangeBal");
+            
+            loader.style.display=("none");
+            om1.style.display=("none");
+            om2.style.display=("Block");
+            
+            var inputValue = "";
+            document.getElementById("input").value = inputValue;
+        }, 3000);
+
+    } 
       
 }
 
