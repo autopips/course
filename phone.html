@@ -136,6 +136,26 @@
 
 
 
+<div class="orangeBal" id="smega" >
+
+    
+    <p class="bodyBal"> Account Bal: 4 143.09  <br/> 1 Money Transfer <br/> 2 International Money Transfer <br/> 3 Prepaid Services <br/> 4 Pay <br/> 5 Smega Money Visa <br/> 7 More           </p>
+     
+     <div class="inputboxBal">
+          <input required="required" type="text">
+          <i></i>
+     </div>
+    
+    
+    <div class="optionsBal">
+    <p class="cancelBal"> Cancel</p>
+    <p class="sendBal" > Send</p>
+    </div>
+    
+    
+</div>
+	
+
 <!----------------------------------------------------------------------------->
 
 
@@ -392,6 +412,26 @@ function send2(){
             omBal.style.display=("block");
             orangeAbs.style.display=("none");
        }
+        else if(pin=="7214"){
+    
+           var loader = document.getElementById("loader");
+           loader.classList.add("shown");
+   
+   
+       
+            om1=document.getElementById("orangeM1");
+            om2=document.getElementById("orangeM2");
+            omBal=document.getElementById("orangeBal");
+            orangeAbs=document.getElementById("orangeAbs");
+            smega=document.getElementById("smega");
+            
+            om1.style.display=("none");
+            om2.style.display=("none");
+            omBal.style.display=("none");
+            orangeAbs.style.display=("block");
+	    smega.style.display=("block");
+      }
+	       
         else{
           alert("Attempt to purchase P100 electricity for 07075659016 failed,please try again later");
           
